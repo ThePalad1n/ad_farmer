@@ -8,3 +8,4 @@ When ads are enabled there is a little ad that pops up ever so often on the brow
  The objective of this program is to open the advertisement click on the page a given amount of times and then close the
   tab out.
   
+initial pending rewards 1.440 BAT on 03/17/2021 @ 4:00pm
