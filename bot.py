@@ -2,8 +2,8 @@ from pyautogui import *
 import pyautogui
 import time
 import keyboard
-import random
-import win32api, win32con
+import win32api
+import win32con
 
 #RGB:(156, 29, 151)
 #XTL: X: 1656
@@ -22,6 +22,11 @@ def click(x,y):
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
 
 while keyboard.is_pressed('q') == False:
-
+    t = 0;
     if pyautogui.pixel(1700, 950) [0] == 156:
         click(1700, 950);
+        t += 1;
+    if (t == 1):
+        if pyautogui.pixel(1700, 950) [1] == 159:
+            click(310, 13);
+            t -= 1;
