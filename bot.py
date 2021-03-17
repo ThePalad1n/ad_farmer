@@ -8,7 +8,7 @@ import win32con
 def click(x,y):
     win32api.SetCursorPos((x,y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0,0)
-    time.sleep(5.00) #This pauses the script for 5 sec
+    time.sleep(1.00) #This pauses the script for 1 sec
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
 
 while keyboard.is_pressed('q') == False:
@@ -17,6 +17,7 @@ while keyboard.is_pressed('q') == False:
         click(1700, 950);
         t += 1;
         if (t == 1):
+            time.sleep(5.00)  # This pauses the script for 5 sec
             if pyautogui.pixel(1700, 950) [1] == 159:
                 click(310, 13);
                 t -= 1;
